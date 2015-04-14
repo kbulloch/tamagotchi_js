@@ -92,8 +92,15 @@ $(document).ready(function() {
     click++;
     update();
   });
+  $("#punt").click(function() {
+    happy--;
+    lonely++;
+    hunger--;
+    click++;
+    update();
+  });
   $("#again").click(function() {
     playAgain();
     $("#endgame").hide();
-  })
+  });
 });
