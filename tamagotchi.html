@@ -4,9 +4,45 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-1.11.2.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Shipper Calcer</title>
+    <title>Tamagotchi Try Not To Kill Me</title>
   </head>
   <body>
-    
+    <div class="container">
+
+      <div class="title">
+        <h1>TAMAGOTCHI~!!</h1>
+      </div>
+
+      <div class="row">
+        <div class ="col-sm-6">
+          <div id="stats">
+            <h3><span id="hunger">Hunger</span></h3>
+            <h3><span id="sleep">Sleep</span></h3>
+            <h3><span id="happy">Happy</span></h3>
+            <h3><span id="lonely">Lonely</span></h3>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div id="buttons-real">
+            <button id="feed" class="btn btn-success">Feed</button>
+            <button id="rest" class="btn btn-info">Rest</button>
+            <button id="play" class="btn btn-warning">Play</button>
+            <button id="pet" class="btn btn-danger">Pet</button>
+          </div>
+          <div id="buttons-fake">
+            <button id="fake" class="btn btn">Feed</button>
+            <button id="fake" class="btn btn">Rest</button>
+            <button id="fake" class="btn btn">Play</button>
+            <button id="fake" class="btn btn">Pet</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="endgame">
+        <h3><span id="end"></span></h3>
+        <button id="again" class="btn btn-warning">Play Again</button>
+      </div>
+
+    </div>
   </body>
 </html>

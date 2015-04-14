@@ -1,7 +1,7 @@
 body::after {
   content: "";
-  background-image: url('http://static1.wikia.nocookie.net/__cb20131006090533/powerlisting/images/6/63/SPACE_NEBULA_STARS.jpg');
-  background-size: 130%;
+  background-image: url('http://fc08.deviantart.net/fs71/i/2014/294/0/0/godzilla_s_coming_to_tokyo_by_warriorking4ever-d83o519.png');
+  background-size: 100%;
   opacity: .8;
   top: 0;
   left: 0;
@@ -15,13 +15,13 @@ body::after {
 h1 {
   font-size: 80px;
   font-family:serif;
-  opacity: .7;
+  opacity: .5;
 }
 
 h3 {
   font-size: 30px;
   font-family:serif;
-  opacity: .7;
+  opacity: .8;
   color: white;
 }
 
@@ -31,18 +31,33 @@ h3 {
   color: #FFF;
 }
 
-.ship-form {
-  margin-top: 10%;
-  margin-left: 25%;
-  margin-right: 25%;
+#stats {
+  margin-left: 200px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
-#button {
-  margin-left: 38%;
+#buttons {
+  text-align: center;
 }
 
-#result {
+#endgame {
   display: none;
   margin-top: 50px;
   text-align: center;
+  color: white;
+}
+
+.btn {
+  min-width: 100px;
+  margin: 10px;
+  margin-right: 200px;
+}
+
+#again {
+  margin: auto;
+}
+
+#buttons-fake {
+  display: none;
 }
