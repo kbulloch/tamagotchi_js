@@ -4,6 +4,7 @@ $(document).ready(function() {
   var sleep = 0;
   var happy = 0;
   var lonely = 0;
+  var click = 0;
   setStats();
   update();
 
@@ -18,14 +19,18 @@ $(document).ready(function() {
     $("#sleep").text("Tiredness: " + sleep);
     $("#happy").text("Happiness: " + happy);
     $("#lonely").text("Loneliness: " + lonely);
+    $("#click_count").text("Clicks: " + click);
     if(hunger === 10) {
-      endGame("Starved to death!");
+      endGame("starve");
     }
     if((happy === 0) || (lonely === 10)) {
-      endGame("Ran Away!");
+      endGame("ran away");
     }
     if(sleep === 10) {
-      endGame("Tamagotchi is in a coma!");
+      endGame("coma");
+    }
+    if(happy === 10) {
+      endGame("joy")
     }
   };
 
@@ -33,11 +38,27 @@ $(document).ready(function() {
     $("#buttons-real").hide();
     $("#buttons-fake").show();
     $("#endgame").show();
-    $("#end").text(cause);
+    if (cause === "starve") {
+      $("#end").text("Starved to death!");
+      $("#losses").append("<li>Starved at " + click + " clicks");
+    }
+    if (cause === "ran away") {
+      $("#end").text("Ran Away!");
+      $("#losses").append("<li>Ran Away at " + click + " clicks");
+    }
+    if (cause === "coma") {
+      $("#end").text("Fell into a coma!");
+      $("#losses").append("<li>Coma at " + click + " clicks");
+    }
+    if (cause === "joy") {
+      $("#end").text("Exploded from Joy!!");
+      $("#wins").append("<li>Exploded from joy at " + click + " clicks");
+    }
   }
 
   function playAgain() {
     setStats();
+    click = 0;
     update();
     $("#buttons-fake").hide();
     $("#buttons-real").show();
@@ -46,23 +67,29 @@ $(document).ready(function() {
   $("#feed").click(function() {
     hunger--;
     sleep++;
+    click++;
     update();
   });
   $("#rest").click(function() {
     sleep--;
     hunger++;
     lonely++;
+    click++;
     update();
   });
   $("#play").click(function() {
     happy++;
     hunger++;
     sleep++;
+    lonely--;
+    click++;
     update();
   });
   $("#pet").click(function() {
     lonely--;
-    hunger++;
+    sleep++;
+    happy++;
+    click++;
     update();
   });
   $("#again").click(function() {

@@ -21,7 +21,11 @@ h1 {
 h3 {
   font-size: 30px;
   font-family:serif;
-  opacity: .8;
+  opacity:.8;
+  color: white;
+}
+
+ul {
   color: white;
 }
 
@@ -32,9 +36,14 @@ h3 {
 }
 
 #stats {
-  margin-left: 200px;
-  margin-bottom: 50px;
   text-align: center;
+}
+
+.black-back {
+  margin-bottom: 50px;
+  background-color: black;
+  border-radius: 10px;
+  opacity: .7;
 }
 
 #buttons {
@@ -51,7 +60,6 @@ h3 {
 .btn {
   min-width: 100px;
   margin: 10px;
-  margin-right: 200px;
 }
 
 #again {
@@ -60,4 +68,8 @@ h3 {
 
 #buttons-fake {
   display: none;
+}
+
+#clicks {
+  text-align: center;
 }

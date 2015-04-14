@@ -13,16 +13,23 @@
         <h1>TAMAGOTCHI~!!</h1>
       </div>
 
+      <div id="clicks">
+        <h3><span id="click_count"></span></h3>
+      </div>
+
+
       <div class="row">
-        <div class ="col-sm-6">
+        <div class ="col-sm-4">
           <div id="stats">
-            <h3><span id="hunger">Hunger</span></h3>
-            <h3><span id="sleep">Sleep</span></h3>
-            <h3><span id="happy">Happy</span></h3>
-            <h3><span id="lonely">Lonely</span></h3>
+            <div class="black-back">
+              <h3><span id="hunger">Hunger</span></h3>
+              <h3><span id="sleep">Sleep</span></h3>
+              <h3><span id="happy">Happy</span></h3>
+              <h3><span id="lonely">Lonely</span></h3>
+            </div>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-4">
           <div id="buttons-real">
             <button id="feed" class="btn btn-success">Feed</button>
             <button id="rest" class="btn btn-info">Rest</button>
@@ -36,11 +43,22 @@
             <button id="fake" class="btn btn">Pet</button>
           </div>
         </div>
+
+          <div class="col-sm-4">
+            <div class="black-back">
+            <ul id="wins">Wins:</ul>
+            <ul id="losses">Losses:</ul>
+          </div>
+        </div>
       </div>
 
       <div id="endgame">
         <h3><span id="end"></span></h3>
         <button id="again" class="btn btn-warning">Play Again</button>
+      </div>
+
+      <div class="row">
+
       </div>
 
     </div>
