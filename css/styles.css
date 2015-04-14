@@ -1,0 +1,48 @@
+body::after {
+  content: "";
+  background-image: url('http://static1.wikia.nocookie.net/__cb20131006090533/powerlisting/images/6/63/SPACE_NEBULA_STARS.jpg');
+  background-size: 130%;
+  opacity: .8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+
+}
+
+h1 {
+  font-size: 80px;
+  font-family:serif;
+  opacity: .7;
+}
+
+h3 {
+  font-size: 30px;
+  font-family:serif;
+  opacity: .7;
+  color: white;
+}
+
+.title {
+  margin-top: 8%;
+  text-align: center;
+  color: #FFF;
+}
+
+.ship-form {
+  margin-top: 10%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#button {
+  margin-left: 38%;
+}
+
+#result {
+  display: none;
+  margin-top: 50px;
+  text-align: center;
+}
