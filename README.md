@@ -1,15 +1,15 @@
-#Triangle Qualifier
+#Tamagotchi
 
-###Javascript Assessment 1
+###Javascript Object Exercise
 
 04.10.2015
 
-Kyle Bulloch
+Kyle Bulloch and John Lin
 
 ###Description
 
-This app will take three lengths and determine what type of triangle will be formed.
+This app allows the user to play with a digital pet, the Tamagotchi.  The user can Feed, Rest, Play, Pet and Punt the Tamagotchi with various effects its stats.
 
 MIT License
 
-Copyright (c) 2015 Kyle Bulloch
+Copyright (c) 2015 Kyle Bulloch and John Lin
